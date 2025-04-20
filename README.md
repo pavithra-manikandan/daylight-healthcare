@@ -1,3 +1,37 @@
+# Healthcare CSV Data Processor
+
+A Next.js application featuring an advanced CSV upload component with comprehensive data handling capabilities.
+
+## Features
+
+### Enhanced CSV Processing
+- **Smart Header Detection**: Automatically identifies the first meaningful data row as headers
+- **Data Cleaning**:
+  - Skips empty rows and placeholder rows (containing just "—" or "???")
+  - Removes completely empty columns
+  - Converts placeholder values to null
+
+- **Error Handling** 
+  - Invalid file type validation (.csv only)
+  - Empty file detection
+  - Malformed CSV parsing errors
+  - Missing header row detection
+
+### User Experience
+- Elegant amber UI theme
+- Clean tabular data presentation
+- Helpful "Information unavailable" hover tooltips
+- Intuitive file upload interface with visual feedback
+
+## Technical Implementation
+
+The core functionality resides in `app/page.tsx` which implements:
+- Type-safe CSV parsing using Papa Parse
+- Advanced data validation and transformation
+- Responsive table display
+- Comprehensive error states
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
